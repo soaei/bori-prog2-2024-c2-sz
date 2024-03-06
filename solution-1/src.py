@@ -16,7 +16,6 @@ if __name__ == "__main__":
                 & (df["dmg"] <= row["dmg_max"]),
                 ["x", "y", "dmg"],
             ]
-            print(sub_df)
             if sub_df.empty:
                 out_row[dt] = 0
             else:
